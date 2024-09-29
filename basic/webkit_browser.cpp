@@ -31,7 +31,8 @@ void WebkitBrowser::SetPos(ui::UiRect rc)
 {
 	__super::SetPos(rc);
 	if (m_hWnd) {
-		::SetWindowPos(m_hWnd, nullptr, rc.left, rc.top, rc.right - rc.left, rc.bottom - rc.top, SWP_NOZORDER | SWP_NOACTIVATE);
+		::MoveWindow(m_hWnd, rc.left, rc.top, rc.right - rc.left, rc.bottom - rc.top + m_patch, true);
+		m_patch = (++m_patch) % 2;
 	}
 }
 
@@ -67,7 +68,10 @@ void WebkitBrowser::Paint(ui::IRenderContext* pRender, const ui::UiRect& rcPaint
 {
 	if( !::IntersectRect(&m_rcPaint, &rcPaint, &m_rcItem) ) return;
 	if (m_hWnd) {
-		MoveWindow(m_hWnd, m_rcPaint.left, m_rcPaint.top, m_rcPaint.right - m_rcPaint.left + 1, m_rcPaint.bottom - m_rcPaint.top + 1, true);
+		HDC hDC = pRender->GetDC();
+		HDC hdcSrc = ::GetDC(m_hWnd);
+		::StretchBlt(hDC, m_rcItem.left, m_rcItem.top, m_rcItem.right - m_rcItem.left, m_rcItem.bottom - m_rcItem.top,
+			hdcSrc, 0, 0, m_rcItem.right - m_rcItem.left, m_rcItem.bottom - m_rcItem.top, SRCCOPY);
 	}
 	return;
 }

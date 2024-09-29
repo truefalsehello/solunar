@@ -21,6 +21,7 @@ public:
 protected:
 	HWND m_hWnd{ nullptr };
 private:
+	int m_patch{ 0 };
 	BrowserMiddleware* m_browsermiddleware{ nullptr };
 	std::wstring m_url;
 	ui::Progress* m_progress{nullptr};
