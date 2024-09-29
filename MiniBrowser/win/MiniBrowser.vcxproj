@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{40402079-C2EC-3544-82FC-EDB4759BAEB0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>webkitbrowser</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>ClangCL</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>ClangCL</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>ClangCL</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>ClangCL</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MiniBrowser.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">webkitbrowser</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\VSProject\WebKit\WebKitBuild\Release\bin64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MiniBrowser.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MiniBrowser</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\VSProject\WebKit\WebKitBuild\Release\bin64\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MiniBrowser.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MiniBrowser</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\VSProject\WebKit\WebKitBuild\Release\bin64\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MiniBrowser.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MiniBrowser</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>d:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitBuild\Release;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\Headers;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\WTF\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\PAL\Headers;D:\VSProject\WebKit\WebKitBuild\Release\ANGLE\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\PrivateHeaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -imsvc "D:/VSProject/WebKit/WebKitLibraries/win/include" -imsvc "D:/VSProject/WebKit/WebKitLibraries/win/include/libxml2" -imsvc "D:/VSProject/WebKit/WebKitLibraries/win/include/cairo" -Wno-noexcept-type -Wno-psabi -Wno-misleading-indentation -Wno-parentheses-equality -Qunused-arguments -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-deprecated-declarations -Wno-sign-compare /EHsc- -fno-strict-aliasing /EHa- /EHc- /EHs- /bigobj /utf-8 /validate-charset</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BUILDING_MiniBrowser;_UNICODE;BUILDING_WITH_CMAKE=1;BUILDING_WEBKIT=1;HAVE_CONFIG_H=1;PAS_BMALLOC=1;_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NTDDI_VERSION=0x0A000006;_WIN32_WINNT=0x0A00;NOMINMAX;UNICODE;NOCRYPT;_WINSOCKAPI_=;GL_GLES_PROTOTYPES=1;EGL_EGL_PROTOTYPES=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;USE_SYSTEM_EGL;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BUILDING_MiniBrowser;_UNICODE;BUILDING_WITH_CMAKE=1;BUILDING_WEBKIT=1;HAVE_CONFIG_H=1;PAS_BMALLOC=1;_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NTDDI_VERSION=0x0A000006;_WIN32_WINNT=0x0A00;NOMINMAX;UNICODE;NOCRYPT;_WINSOCKAPI_=;GL_GLES_PROTOTYPES=1;EGL_EGL_PROTOTYPES=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;USE_SYSTEM_EGL;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>d:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitBuild\Release;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\Headers;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\WTF\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\PAL\Headers;D:\VSProject\WebKit\WebKitBuild\Release\ANGLE\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\PrivateHeaders;D:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitLibraries\win\include\libxml2;D:\VSProject\WebKit\WebKitLibraries\win\include\cairo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>d:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitBuild\Release;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\Headers;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\WTF\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\PAL\Headers;D:\VSProject\WebKit\WebKitBuild\Release\ANGLE\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\PrivateHeaders;D:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitLibraries\win\include\libxml2;D:\VSProject\WebKit\WebKitLibraries\win\include\cairo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;user32.lib;..\..\..\lib64\WebKit2.lib;..\..\..\lib64\WebCore.lib;..\..\..\lib64\JavaScriptCore.lib;ws2_32.lib;wsock32.lib;..\..\..\lib64\WTF.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\icudt.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\icuin.lib;DbgHelp.lib;shlwapi.lib;winmm.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\icuuc.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libxml2.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\sqlite3.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libxslt.lib;..\..\..\lib64\libEGL.lib;..\..\..\lib64\libGLESv2.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\lcms2.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\woff2dec.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libcurl_imp.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\psl.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\ssl.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\crypto.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\jpeg.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libpng16.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\zlib.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libwebpdemux.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libwebp.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\jxl.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\cairo.lib;crypt32.lib;iphlpapi.lib;usp10.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\brotlidec.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\woff2common.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/VSProject/WebKit/WebKitBuild/Release/lib/Release;D:/VSProject/WebKit/WebKitBuild/Release/lib/Release/$(Configuration);D:/VSProject/WebKit/WebKitBuild/Release/lib64;D:/VSProject/WebKit/WebKitBuild/Release/lib64/$(Configuration);d:/VSProject/WebKit/WebKitLibraries/win/lib64;d:/VSProject/WebKit/WebKitLibraries/win/lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 "D:/Isoftware/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/lib/clang/17/lib/windows/clang_rt.builtins-x86_64.lib" "/manifestdependency:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='amd64' publicKeyToken='6595b64144ccf1df' language='*'"</AdditionalOptions>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/VSProject/WebKit/WebKitBuild/Release/lib64/MiniBrowser.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/VSProject/WebKit/WebKitBuild/Release/bin64/MiniBrowser.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>d:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitBuild\Release;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\Headers;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\WTF\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\PAL\Headers;D:\VSProject\WebKit\WebKitBuild\Release\ANGLE\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\PrivateHeaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -imsvc "D:/VSProject/WebKit/WebKitLibraries/win/include" -imsvc "D:/VSProject/WebKit/WebKitLibraries/win/include/libxml2" -imsvc "D:/VSProject/WebKit/WebKitLibraries/win/include/cairo" -Wno-noexcept-type -Wno-psabi -Wno-misleading-indentation -Wno-parentheses-equality -Qunused-arguments -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-deprecated-declarations -Wno-sign-compare /EHsc- -fno-strict-aliasing /EHa- /EHc- /EHs- /bigobj /utf-8 /validate-charset</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BUILDING_MiniBrowser;_UNICODE;BUILDING_WITH_CMAKE=1;BUILDING_WEBKIT=1;HAVE_CONFIG_H=1;PAS_BMALLOC=1;_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NTDDI_VERSION=0x0A000006;_WIN32_WINNT=0x0A00;NOMINMAX;UNICODE;NOCRYPT;_WINSOCKAPI_=;GL_GLES_PROTOTYPES=1;EGL_EGL_PROTOTYPES=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;USE_SYSTEM_EGL;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BUILDING_MiniBrowser;_UNICODE;BUILDING_WITH_CMAKE=1;BUILDING_WEBKIT=1;HAVE_CONFIG_H=1;PAS_BMALLOC=1;_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NTDDI_VERSION=0x0A000006;_WIN32_WINNT=0x0A00;NOMINMAX;UNICODE;NOCRYPT;_WINSOCKAPI_=;GL_GLES_PROTOTYPES=1;EGL_EGL_PROTOTYPES=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;USE_SYSTEM_EGL;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>d:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitBuild\Release;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\Headers;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\WTF\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\PAL\Headers;D:\VSProject\WebKit\WebKitBuild\Release\ANGLE\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\PrivateHeaders;D:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitLibraries\win\include\libxml2;D:\VSProject\WebKit\WebKitLibraries\win\include\cairo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>d:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitBuild\Release;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\Headers;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\WTF\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\PAL\Headers;D:\VSProject\WebKit\WebKitBuild\Release\ANGLE\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\PrivateHeaders;D:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitLibraries\win\include\libxml2;D:\VSProject\WebKit\WebKitLibraries\win\include\cairo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;user32.lib;..\..\..\lib64\WebKit2.lib;..\..\..\lib64\WebCore.lib;..\..\..\lib64\JavaScriptCore.lib;ws2_32.lib;wsock32.lib;..\..\..\lib64\WTF.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\icudt.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\icuin.lib;DbgHelp.lib;shlwapi.lib;winmm.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\icuuc.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libxml2.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\sqlite3.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libxslt.lib;..\..\..\lib64\libEGL.lib;..\..\..\lib64\libGLESv2.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\lcms2.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\woff2dec.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libcurl_imp.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\psl.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\ssl.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\crypto.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\jpeg.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libpng16.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\zlib.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libwebpdemux.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libwebp.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\jxl.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\cairo.lib;crypt32.lib;iphlpapi.lib;usp10.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\brotlidec.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\woff2common.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/VSProject/WebKit/WebKitBuild/Release/lib/Release;D:/VSProject/WebKit/WebKitBuild/Release/lib/Release/$(Configuration);D:/VSProject/WebKit/WebKitBuild/Release/lib64;D:/VSProject/WebKit/WebKitBuild/Release/lib64/$(Configuration);d:/VSProject/WebKit/WebKitLibraries/win/lib64;d:/VSProject/WebKit/WebKitLibraries/win/lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 "D:/Isoftware/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/lib/clang/17/lib/windows/clang_rt.builtins-x86_64.lib" "/manifestdependency:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='amd64' publicKeyToken='6595b64144ccf1df' language='*'"</AdditionalOptions>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/VSProject/WebKit/WebKitBuild/Release/lib64/MiniBrowser.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/VSProject/WebKit/WebKitBuild/Release/bin64/MiniBrowser.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>d:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitBuild\Release;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\Headers;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\WTF\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\PAL\Headers;D:\VSProject\WebKit\WebKitBuild\Release\ANGLE\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\PrivateHeaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -imsvc "D:/VSProject/WebKit/WebKitLibraries/win/include" -imsvc "D:/VSProject/WebKit/WebKitLibraries/win/include/libxml2" -imsvc "D:/VSProject/WebKit/WebKitLibraries/win/include/cairo" -Wno-noexcept-type -Wno-psabi -Wno-misleading-indentation -Wno-parentheses-equality -Qunused-arguments -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-deprecated-declarations -Wno-sign-compare /EHsc- -fno-strict-aliasing /EHa- /EHc- /EHs- /bigobj /utf-8 /validate-charset</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BUILDING_MiniBrowser;_UNICODE;BUILDING_WITH_CMAKE=1;BUILDING_WEBKIT=1;HAVE_CONFIG_H=1;PAS_BMALLOC=1;_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NTDDI_VERSION=0x0A000006;_WIN32_WINNT=0x0A00;NOMINMAX;UNICODE;NOCRYPT;_WINSOCKAPI_=;GL_GLES_PROTOTYPES=1;EGL_EGL_PROTOTYPES=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;USE_SYSTEM_EGL;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BUILDING_MiniBrowser;_UNICODE;BUILDING_WITH_CMAKE=1;BUILDING_WEBKIT=1;HAVE_CONFIG_H=1;PAS_BMALLOC=1;_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NTDDI_VERSION=0x0A000006;_WIN32_WINNT=0x0A00;NOMINMAX;UNICODE;NOCRYPT;_WINSOCKAPI_=;GL_GLES_PROTOTYPES=1;EGL_EGL_PROTOTYPES=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;USE_SYSTEM_EGL;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>d:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitBuild\Release;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\Headers;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\WTF\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\PAL\Headers;D:\VSProject\WebKit\WebKitBuild\Release\ANGLE\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\PrivateHeaders;D:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitLibraries\win\include\libxml2;D:\VSProject\WebKit\WebKitLibraries\win\include\cairo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>d:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitBuild\Release;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\Headers;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\WTF\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\PAL\Headers;D:\VSProject\WebKit\WebKitBuild\Release\ANGLE\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\PrivateHeaders;D:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitLibraries\win\include\libxml2;D:\VSProject\WebKit\WebKitLibraries\win\include\cairo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;user32.lib;..\..\..\lib64\MinSizeRel\WebKit2.lib;..\..\..\lib64\MinSizeRel\WebCore.lib;..\..\..\lib64\MinSizeRel\JavaScriptCore.lib;ws2_32.lib;wsock32.lib;..\..\..\lib64\MinSizeRel\WTF.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\icudt.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\icuin.lib;DbgHelp.lib;shlwapi.lib;winmm.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\icuuc.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libxml2.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\sqlite3.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libxslt.lib;..\..\..\lib64\MinSizeRel\libEGL.lib;..\..\..\lib64\MinSizeRel\libGLESv2.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\lcms2.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\woff2dec.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libcurl_imp.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\psl.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\ssl.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\crypto.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\jpeg.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libpng16.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\zlib.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libwebpdemux.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libwebp.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\jxl.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\cairo.lib;crypt32.lib;iphlpapi.lib;usp10.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\brotlidec.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\woff2common.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/VSProject/WebKit/WebKitBuild/Release/lib/Release;D:/VSProject/WebKit/WebKitBuild/Release/lib/Release/$(Configuration);D:/VSProject/WebKit/WebKitBuild/Release/lib64;D:/VSProject/WebKit/WebKitBuild/Release/lib64/$(Configuration);d:/VSProject/WebKit/WebKitLibraries/win/lib64;d:/VSProject/WebKit/WebKitLibraries/win/lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 "D:/Isoftware/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/lib/clang/17/lib/windows/clang_rt.builtins-x86_64.lib" "/manifestdependency:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='amd64' publicKeyToken='6595b64144ccf1df' language='*'"</AdditionalOptions>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/VSProject/WebKit/WebKitBuild/Release/lib64/MinSizeRel/MiniBrowser.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/VSProject/WebKit/WebKitBuild/Release/bin64/MinSizeRel/MiniBrowser.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>d:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitBuild\Release;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\Headers;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\WTF\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\PAL\Headers;D:\VSProject\WebKit\WebKitBuild\Release\ANGLE\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\PrivateHeaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -imsvc "D:/VSProject/WebKit/WebKitLibraries/win/include" -imsvc "D:/VSProject/WebKit/WebKitLibraries/win/include/libxml2" -imsvc "D:/VSProject/WebKit/WebKitLibraries/win/include/cairo" -Wno-noexcept-type -Wno-psabi -Wno-misleading-indentation -Wno-parentheses-equality -Qunused-arguments -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-deprecated-declarations -Wno-sign-compare /EHsc- -fno-strict-aliasing /EHa- /EHc- /EHs- /bigobj /utf-8 /validate-charset</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BUILDING_MiniBrowser;_UNICODE;BUILDING_WITH_CMAKE=1;BUILDING_WEBKIT=1;HAVE_CONFIG_H=1;PAS_BMALLOC=1;_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NTDDI_VERSION=0x0A000006;_WIN32_WINNT=0x0A00;NOMINMAX;UNICODE;NOCRYPT;_WINSOCKAPI_=;GL_GLES_PROTOTYPES=1;EGL_EGL_PROTOTYPES=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;USE_SYSTEM_EGL;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BUILDING_MiniBrowser;_UNICODE;BUILDING_WITH_CMAKE=1;BUILDING_WEBKIT=1;HAVE_CONFIG_H=1;PAS_BMALLOC=1;_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NTDDI_VERSION=0x0A000006;_WIN32_WINNT=0x0A00;NOMINMAX;UNICODE;NOCRYPT;_WINSOCKAPI_=;GL_GLES_PROTOTYPES=1;EGL_EGL_PROTOTYPES=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;USE_SYSTEM_EGL;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>d:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitBuild\Release;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\Headers;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\WTF\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\PAL\Headers;D:\VSProject\WebKit\WebKitBuild\Release\ANGLE\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\PrivateHeaders;D:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitLibraries\win\include\libxml2;D:\VSProject\WebKit\WebKitLibraries\win\include\cairo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>d:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitBuild\Release;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\Headers;D:\VSProject\WebKit\WebKitBuild\Release\JavaScriptCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\WTF\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebCore\PrivateHeaders;D:\VSProject\WebKit\WebKitBuild\Release\PAL\Headers;D:\VSProject\WebKit\WebKitBuild\Release\ANGLE\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\Headers;D:\VSProject\WebKit\WebKitBuild\Release\WebKit\PrivateHeaders;D:\VSProject\WebKit\WebKitLibraries\win\include;D:\VSProject\WebKit\WebKitLibraries\win\include\libxml2;D:\VSProject\WebKit\WebKitLibraries\win\include\cairo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;user32.lib;..\..\..\lib64\RelWithDebInfo\WebKit2.lib;..\..\..\lib64\RelWithDebInfo\WebCore.lib;..\..\..\lib64\RelWithDebInfo\JavaScriptCore.lib;ws2_32.lib;wsock32.lib;..\..\..\lib64\RelWithDebInfo\WTF.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\icudt.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\icuin.lib;DbgHelp.lib;shlwapi.lib;winmm.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\icuuc.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libxml2.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\sqlite3.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libxslt.lib;..\..\..\lib64\RelWithDebInfo\libEGL.lib;..\..\..\lib64\RelWithDebInfo\libGLESv2.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\lcms2.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\woff2dec.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libcurl_imp.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\psl.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\ssl.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\crypto.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\jpeg.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libpng16.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\zlib.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libwebpdemux.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\libwebp.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\jxl.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\cairo.lib;crypt32.lib;iphlpapi.lib;usp10.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\brotlidec.lib;D:\VSProject\WebKit\WebKitLibraries\win\lib\woff2common.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/VSProject/WebKit/WebKitBuild/Release/lib/Release;D:/VSProject/WebKit/WebKitBuild/Release/lib/Release/$(Configuration);D:/VSProject/WebKit/WebKitBuild/Release/lib64;D:/VSProject/WebKit/WebKitBuild/Release/lib64/$(Configuration);d:/VSProject/WebKit/WebKitLibraries/win/lib64;d:/VSProject/WebKit/WebKitLibraries/win/lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 "D:/Isoftware/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/lib/clang/17/lib/windows/clang_rt.builtins-x86_64.lib" "/manifestdependency:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='amd64' publicKeyToken='6595b64144ccf1df' language='*'"</AdditionalOptions>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/VSProject/WebKit/WebKitBuild/Release/lib64/RelWithDebInfo/MiniBrowser.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/VSProject/WebKit/WebKitBuild/Release/bin64/RelWithDebInfo/MiniBrowser.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\ZERO_CHECK.vcxproj">
+      <Project>{E0A10314-63FF-32D5-BB65-680455AF64C3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\Source\ThirdParty\ANGLE\ANGLE-webgl-headers.vcxproj">
+      <Project>{F29592A2-15CF-3B7F-9E1A-824E31B83509}</Project>
+      <Name>ANGLE-webgl-headers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\Source\ThirdParty\ANGLE\EGL.vcxproj">
+      <Project>{299F997E-A367-377F-9891-E02778E2C4CC}</Project>
+      <Name>EGL</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\Source\ThirdParty\ANGLE\GLESv2.vcxproj">
+      <Project>{25D35209-0E07-3A7E-94F1-FBFD67F229B9}</Project>
+      <Name>GLESv2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\Source\WebKit\GPUProcess.vcxproj">
+      <Project>{E1DF9C40-F6F8-33C6-BD54-409FCD459A2A}</Project>
+      <Name>GPUProcess</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\Source\JavaScriptCore\JavaScriptCore.vcxproj">
+      <Project>{A6CBC036-BD40-3696-8D6E-4FFFC5C73F02}</Project>
+      <Name>JavaScriptCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\Source\JavaScriptCore\JavaScriptCore_CopyHeaders.vcxproj">
+      <Project>{98EAEBBC-C846-34E4-8DBD-651F44BBF268}</Project>
+      <Name>JavaScriptCore_CopyHeaders</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\Source\JavaScriptCore\JavaScriptCore_CopyPrivateHeaders.vcxproj">
+      <Project>{81E762AA-1DCD-3DAA-A3FB-427AD331CE95}</Project>
+      <Name>JavaScriptCore_CopyPrivateHeaders</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\Source\WebKit\NetworkProcess.vcxproj">
+      <Project>{D080B6B5-93FC-3026-90D8-978530F4BD94}</Project>
+      <Name>NetworkProcess</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\Source\WTF\wtf\WTF.vcxproj">
+      <Project>{F83D6C3F-90F1-3222-90B3-1115EA2E6309}</Project>
+      <Name>WTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\Source\WTF\wtf\WTF_CopyHeaders.vcxproj">
+      <Project>{8F7A0E89-AB59-3BFC-9689-97C2837669E1}</Project>
+      <Name>WTF_CopyHeaders</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\Source\WebCore\WebCore.vcxproj">
+      <Project>{F6CEBDED-2208-3E82-9E24-A16D086630D7}</Project>
+      <Name>WebCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\Source\WebCore\WebCore_CopyPrivateHeaders.vcxproj">
+      <Project>{0F60469C-50D6-34C0-B2C6-E5F6D1799B92}</Project>
+      <Name>WebCore_CopyPrivateHeaders</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\Source\WebKit\WebKit.vcxproj">
+      <Project>{5AC8A1EB-E954-3102-B168-38E704DA6153}</Project>
+      <Name>WebKit</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VSProject\WebKit\WebKitBuild\Release\Source\WebKit\WebProcess.vcxproj">
+      <Project>{32B73116-AE43-342A-93BD-BB4A4B06C6B0}</Project>
+      <Name>WebProcess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\BrowserWindow.h" />
+    <ClInclude Include="..\Common.h" />
+    <ClInclude Include="..\Common2.h" />
+    <ClInclude Include="..\MainWindow.h" />
+    <ClInclude Include="..\stdafx.h" />
+    <ClInclude Include="..\WebkitBrowser.h" />
+    <ClInclude Include="..\WebKitBrowserWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\BrowserWindow.cpp" />
+    <ClCompile Include="..\Common2.cpp" />
+    <ClCompile Include="..\MainWindow.cpp" />
+    <ClCompile Include="..\WebkitBrowser.cpp" />
+    <ClCompile Include="..\WebKitBrowserWindow.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
