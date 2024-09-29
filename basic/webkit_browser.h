@@ -1,4 +1,5 @@
 #pragma once
+
 #include "/VSProject/solunar/MiniBrowser/WebkitBrowser.h"
 
 class WebkitBrowser : public ui::Control
@@ -15,10 +16,11 @@ public:
 
 	bool isPage(HWND hwnd, int value);
 
+	virtual void Paint(ui::IRenderContext* pRender, const ui::UiRect& rcPaint);
+
 protected:
 	HWND m_hWnd{ nullptr };
 private:
-	int m_pacth{0};
 	BrowserMiddleware* m_browsermiddleware{ nullptr };
 	std::wstring m_url;
 	ui::Progress* m_progress{nullptr};
