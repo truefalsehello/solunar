@@ -62,6 +62,8 @@ void SolunarForm::InitWindow()
 	AddMessageFilter(this);
 }
 
+#define IDT_TIMER 1
+
 LRESULT SolunarForm::MessageHandler(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
 {
 	switch (uMsg)
@@ -69,15 +71,42 @@ LRESULT SolunarForm::MessageHandler(UINT uMsg, WPARAM wParam, LPARAM lParam, BOO
 	case WM_PROGRESS_CHANGE: {
 		auto wb_baidu = static_cast<WebkitBrowser*>(FindControl(L"wb_baidu"));
 		auto wb_douyin = static_cast<WebkitBrowser*>(FindControl(L"wb_douyin"));
-
 		if (wb_baidu->isPage((HWND)lParam, wParam));
 		else if (wb_douyin->isPage((HWND)lParam, wParam));
 	}
 		break;
+	case WM_MOVE: {
+		static bool flag = false;
+		RECT rect;
+		GetWindowRect(GetHWND(), &rect);
+
+		int screenWidth = GetSystemMetrics(SM_CXSCREEN);
+		int screenHeight = GetSystemMetrics(SM_CYSCREEN);
+
+		if (rect.left < 0 || rect.top < 0 || rect.right > screenWidth || rect.bottom > screenHeight) {
+			if (flag) {
+				KillTimer(GetHWND(), IDT_TIMER);
+				flag = false;
+			}
+			flag = true;
+			SetTimer(GetHWND(), IDT_TIMER, 200, NULL);
+		}
+	}
+		break;
+	case WM_TIMER:
+		if (wParam == IDT_TIMER) {
+			KillTimer(GetHWND(), IDT_TIMER);
+
+			auto wb_baidu = static_cast<WebkitBrowser*>(FindControl(L"wb_baidu"));
+			auto wb_douyin = static_cast<WebkitBrowser*>(FindControl(L"wb_douyin"));
+			wb_baidu->SetPos(wb_baidu->GetPos());
+			wb_douyin->SetPos(wb_douyin->GetPos());
+		}
+		break;
 	default:
 		break;
 	}
-	return true;
+	return false;
 }
 
 bool SolunarForm::OnSelected(ui::EventArgs* arg)
