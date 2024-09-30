@@ -72,6 +72,7 @@ void WebkitBrowser::Paint(ui::IRenderContext* pRender, const ui::UiRect& rcPaint
 		HDC hdcSrc = ::GetDC(m_hWnd);
 		::StretchBlt(hDC, m_rcItem.left, m_rcItem.top, m_rcItem.right - m_rcItem.left, m_rcItem.bottom - m_rcItem.top,
 			hdcSrc, 0, 0, m_rcItem.right - m_rcItem.left, m_rcItem.bottom - m_rcItem.top, SRCCOPY);
+		::ReleaseDC(m_hWnd, hdcSrc);
 	}
 	return;
 }
